@@ -57,7 +57,7 @@ public class InformationDataActivity extends AppCompatActivity{
             public void onClick(View v) {
 
                 int numDrinks = Integer.parseInt(mNumberDrinks.getText().toString());
-                int timeHours=Integer.parseInt(mTimeInHours.getText().toString());
+                double timeHours=Double.valueOf(mTimeInHours.getText().toString());
                 Log.d(TAG, "time in hours is "+timeHours);
                 String gender = mGender.getText().toString().toLowerCase();
                 if (timeHours >= 23 || numDrinks>=15) {
@@ -68,19 +68,19 @@ public class InformationDataActivity extends AppCompatActivity{
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
                 }
-                else if(gender.charAt(0)=='m') {
-                            if ((numDrinks*1.0) / timeHours >= 1.5) {
+                else if(gender.charAt(0)=='m'
+                            && ((numDrinks*1.0) / timeHours >= 1.5)) {
                                 startTest();
                             }
-                    if(gender.charAt(0)=='f'){
-                        if((numDrinks*1.0)/timeHours >=1.2){
+                else if(gender.charAt(0)=='f' &&
+                        (numDrinks*1.0)/timeHours >=1.2){
                             startTest();
                         }
-                    }
 
 
 
-                }else{
+
+                else{
                     startNotDrunkActivity();
                 }
 
