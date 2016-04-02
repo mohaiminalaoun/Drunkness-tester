@@ -16,7 +16,7 @@ import java.util.LinkedHashMap;
 
 import android.support.annotation.NonNull;
 import android.util.Log;
-import com.reimaginebanking.api.*;
+//import com.reimaginebanking.api.*;
 import com.reimaginebanking.api.java.*;
 import com.reimaginebanking.api.java.Constants.TransactionMedium;
 import com.reimaginebanking.api.java.models.Transfer;
@@ -54,7 +54,17 @@ public class BankAccount {
     private int fromBalance; //FORMAT: xxxx = $xx.xx
     private boolean accountIsVerified = false;
 
-
+    public BankAccount() throws Exception{
+        customerInformation.put(FIRSTNAME, "Kit");
+        customerInformation.put(LASTNAME, "Cloudkicker");
+        customerInformation.put(CUSTOMERID, "56c66be6a73e49274150757c");
+        toAccount = "56c66be7a73e4927415082c2";
+        fromAccount = "56c66be7a73e4927415082c1";
+        accountIsVerified = true;
+        allAccounts = new ArrayList<String>();
+        getAccounts();
+    }
+    
     public BankAccount(String first, String last, String theirID) throws Exception{
         //Verify account first. The account will remain verified after initialization
         if(!verifyAccount(first, last, theirID))
