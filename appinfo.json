@@ -1,0 +1,78 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "mattcheung2019@u.northwestern.",
+    "enableMultiJS": true,
+    "longName": "DrinkSafe",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/x1f37a.png.pagespeed.ic.jCIqJcZ0tt.png",
+                "name": "IMAGE_BEER",
+                "targetPlatforms": [
+                    "aplite",
+                    "basalt",
+                    "chalk"
+                ],
+                "type": "bitmap"
+            },
+            {
+                "file": "images/warning.png",
+                "name": "IMAGE_WARNING",
+                "targetPlatforms": [
+                    "aplite",
+                    "basalt",
+                    "chalk"
+                ],
+                "type": "bitmap"
+            },
+            {
+                "file": "images/cross.png",
+                "name": "IMAGE_CROSS",
+                "targetPlatforms": [
+                    "aplite",
+                    "basalt",
+                    "chalk"
+                ],
+                "type": "bitmap"
+            },
+            {
+                "file": "images/login_user_icon.png",
+                "name": "IMAGE_CALIB",
+                "targetPlatforms": [
+                    "aplite",
+                    "basalt",
+                    "chalk"
+                ],
+                "type": "bitmap"
+            },
+            {
+                "file": "images/pause_btn.gif",
+                "name": "IMAGE_PAUSE",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/play.png",
+                "name": "IMAGE_PLAY",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "DrinkSafe",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "0e35dbe1-01f6-445d-a319-488e0047b083",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
